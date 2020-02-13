@@ -29,14 +29,13 @@ def main():
             return (84)
         my_list.append(int(argv[i]))
 
-    print("Unsorted list :", my_list, sep='\n')
-    print("Sorting started...")
+    print("Unsorted list:", my_list, sep='\n')
+    print("Sorting...")
     while len(my_list):
         smallest = find_smallest(my_list)
         sorted_list.append(smallest)
         my_list.remove(smallest)
-    
-    print(sorted_list)
+    print("Sorted list:", sorted_list, sep='\n')
 
 if __name__ == '__main__':
     main()
